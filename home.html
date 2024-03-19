@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title> MAME | Home Page</title>
+        <link rel="icon" type="image/x-icon" href="Images/logo.png">
+        <link rel="stylesheet" href="mamestyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <style>
+            /* Button used to open the contact form - fixed at the bottom of the page */
+            .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+            }
+
+            /* The popup form - hidden by default */
+            .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            }
+
+           /* Add styles to the form container */
+           .form-container {
+           max-width: 640px;
+           padding: 10px;
+           background-color: white;
+           }
+
+           /* Set a style for the submit/login button */
+           .form-container .btn {
+           background-color: #04AA6D;
+           color: white;
+           padding: 16px 20px;
+           border: none;
+           cursor: pointer;
+           width: 100%;
+           margin-bottom:10px;
+           opacity: 0.8;
+           }
+
+           /* Add a red background color to the cancel button */
+           .form-container .cancel {
+           background-color: teal;
+           }
+
+           /* Add some hover effects to buttons */
+           .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+           }
+
+        </style>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="Images/logo.png" alt="Mame logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="aboutUs.html">ABOUT</a></li>
+                        <li><a href="getInvolved.html">EVENTS</a></li>
+                        <li><a href="Photo Gallery.html">CARS</a></li>
+                        <li><a href="contactUs.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="body-text">
+                <h1 style="color:rgb(0, 0, 0);font-size:50px">MAME</h1>
+                <p style="color:rgb(17, 55, 98); font-size:30px;">How could I regret the only life I've only ever known...</p>
+                <div class=" hero-btn">
+                    <a href="aboutUs.html" style="color:rgb(2, 13, 22); text-decoration: none;">Visit Us To Know More</a>
+                </div>
+                <br/><br/><br/><br/>
+                <p style="color:rgb(0, 0, 0);font-size: 40px; font-weight: bolder;">The future of mobility was not designed from technology alone, these cars were once just a dream.
+                    A dream turned to reality. MAME, a modern, luxurios and unique space.</p>
+            </div>
+        </section>
+
+        <!-- cars -->
+        <section class="cars">
+            <h1>OUR CAR COLLECTION</h1>
+            <br/><br/>
+            <div class="carsPanel">
+                <div class="carsColumns">
+                    <img src="Images/AUDI.png" alt="audi background">
+                    <div class="layerOver">
+                        <a href="https://cdn.intelligentcarleasing.com/userfiles/vehicles/xl_24717.jpg.webp"><h3>AUDI</h3></a>
+                    </div>
+                </div>
+                <div class="carsColumns">
+                    <img src="Images/BMW.png" alt="bmw background">
+                    <div class="layerOver">
+                        <a href="https://wallpaperaccess.com/full/4067246.jpg"><h3>BMW</h3></a>
+                    </div>
+                </div>
+                <div class="carsColumns">
+                    <img src="Images/KOENIGSEGG.png" alt="koenigsegg background">
+                    <div class="layerOver">
+                        <a href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/25f7bc43812849.57fd9fb58d6f6.jpg"><h3>KOENIGSEGG</h3></a>
+                    </div>
+                </div>
+                <div class="carsColumns">
+                    <img src="Images/NISSAN.png" alt="nissan background">
+                    <div class="layerOver">
+                        <a href="https://c.wallhere.com/photos/bc/20/skyline_Japanese_cars_Nissan_Skyline_GT_R_R34-120279.jpg!d"><h3>NISSAN</h3></a>
+                    </div>
+                </div>
+                <div class="carsColumns">
+                    <img src="Images/PORCHE.png" alt="porsche background">
+                    <div class="layerOver">
+                        <a href="https://www.automobiledimension.com/photos/extra/porsche-911-carrera-2019-extra1.jpg"><h3>PORSCHE</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <button class="open-button" onclick="openForm()">Feedback</button>
+            
+            <div class="form-popup" id="myForm">
+              <form class="form-container">
+                <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=RI8M4Wn0j0S8DdeBKI_wG7IpocBOQW9Cu9dttjg7JQRUMEJVV1RWRjlWWE42WjRWUkdDWkdLUFNEMi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+            
+            <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+        </section>
+            
+        <!-- Start of Footer -->
+        <footer class="footer">
+            <table>
+                <tr>
+                    <td height="10" colspan="3">
+                    </td>
+              </tr>
+            </table>
+
+            <div class="OneFooterStyledToolBar ibckTop">
+                <a aria-label="Back To Top" href="home.html" class="ToTopStyledLink ihomePG">
+                    <span>Back To Top</span>
+                </a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="ourWork.html">Our Work</a></li>
+                <li class="list-inline-item"><a href="Photo Gallery.html">Our Cars</a></li>
+                <li class="list-inline-item"><a href="getInvolved.html">Get Involved</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="https://www.techtarget.com/whatis/definition/privacy-policy">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">MAME © 2022</p>
+            <div>
+               
+        </footer>
+        
+    </body>
+</html>

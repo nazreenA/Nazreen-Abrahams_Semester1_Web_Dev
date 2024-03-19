@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(167, 212, 221, 0.185),rgba(40, 107, 184, 0.384)), url('https://s3-eu-west-1.amazonaws.com/fetchcfd/original/file-1548003728937.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color:whitesmoke;
+}
+
+nav img{
+    margin-left: 50%;
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(98, 94, 107);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.body-text{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-btn{
+    text-align: center;
+    display: inline-block;  /*Determines the type of boxes generated for an element*/
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: thick double rgb(35, 136, 161);
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* :hover is when user interacts with buttons but doesn't activate it */
+.hero-btn:hover{
+    border: 1px solid rgb(61, 54, 54);
+    background-color: rgba(35, 19, 179, 0.473);
+    transition: 2s;
+}
+
+/* Cars */
+.cars{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.cars h1{
+    color: rgb(29, 27, 34);
+}
+
+.carsColumns{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carsColumns img{
+    width: 100%;
+    display: block; 
+}
+
+.layerOver{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layerOver:hover{
+    background: rgba(0, 128, 128, 0.432);
+}
+
+.layerOver h3{
+    width: 100%;
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    font-size: large;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layerOver:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* footer */
+
+.footer{
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(3, 51, 51, 0.57);
+    position: relative;
+    bottom: 0;
+}
+
+/* Address */
+.addressFooter{
+    font-size: 20px;
+}
+
+
+.ibckTop{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+
+.ibckTop span{
+    color:rgb(255, 255, 255);
+}
+  
+  .footer ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer li {
+    padding:0 10px;
+  }
+  
+  .footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer ul a:hover {
+    opacity:1;
+  }
+  
+  .footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(255, 255, 255);
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer .social > a:hover {
+    opacity:0.9;
+  }
+
+  .footer .list-inline li a {
+      color: white;
+  }
+  
+  .footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(255, 255, 255);
+    margin-bottom:0;
+  }
+
+/* Header For Other Pages */
+  
+.headerSecond h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    color: rgb(61, 54, 54);
+}
+
+/* Contact Us Page */
+.address{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.address iframe{
+    width: 100%;
+}
+
+
+.icontact li{
+    margin-left: 40px;
+    width: 46%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.icontact h5{
+    color: rgb(61, 54, 54);
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 10%;
+}
+
+.icontact a{
+    text-decoration: none;
+    color: rgb(61, 54, 54);
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+.icontact p{
+    color:rgb(61, 54, 54);
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 5px;
+    margin-bottom: 10%;
+}
+
+.igoogle{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.igoogle iframe{
+    width: 100%;
+    
+}
+
+/* Photo Gallery Page */
+
+.ourProjects{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.carsEvents{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carsEvents img{
+    width: 100%;
+    display: block; 
+}
+
+.iLoce{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.iLoce:hover{
+    background: rgba(0, 128, 128, 0.371);
+}
+
+.iLoce h3{
+    width: 100%;
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    font-size: large;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.iLoce:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.icarsPG{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.icarRow{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icarCol{
+    flex-basis: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+/* Get Involved Page */
+/* EventsTable */
+.ourEvents{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iEtab{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.iEtab td, th{
+    border: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.iEtab tr:nth-child(even) {
+    background-color: rgba(0, 139, 139, 0.371);
+}
+
+.iVRules{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iERules{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.iERules td, th{
+    border: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ABOUT US PAGE */
+.iabout{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iabout h3{
+    color: rgb(29, 27, 34);
+    font-size: 30px;
+    text-align: center;
+}
+
+.idesc{
+    margin-top: 10px;
+    min-height: 60vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(167, 212, 221, 0.185),rgba(40, 107, 184, 0.384)),url('Images/Slide2d.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#gallery-text-left{
+    /* Added */
+    width: 50%;
+  }
+  #gallery-paragraph-1{
+    border-left:8px solid #000000;
+    border-radius:4px;
+    padding-left:15px;
+    /* Added */
+    word-wrap: break-word;
+    font-size: xx-large;
+  }
+  #gallery-paragraph-2{
+    border-left:8px solid #3CB371;
+    border-radius:4px;
+    padding-left:15px;
+  }
+  #gallery-text-right{
+    /* Added */
+    width: 50%;
+  }
+
+
+.imoreAB{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.imoreAB #gallery-text-left{
+    /* Added */
+    width: 50%;
+}
+
+.imoreAB #gallery-paragraph-1{
+    border-left:8px solid #708b8b;
+    border-radius:4px;
+    padding-left:15px;
+    /* Added */
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.imoreAB #gallery-paragraph-2{
+    border-left:8px solid #708b8b;
+    border-radius:4px;
+    padding-left:15px;
+}
+
+.imoreAB #gallery-text-right{
+    /* Added */
+    width: 50%;
+}
+
+
+.iWBody{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iWBody #gallery-text-left{
+    /* Added */
+    width: 50%;
+}
+
+.iWBody #gallery-paragraph-1{
+    border-left:8px solid #ffffff;
+    border-radius:4px;
+    padding-left:15px;
+    /* Added */
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.iWBody #gallery-paragraph-2{
+    border-left:8px solid #ffffff;
+    border-radius:4px;
+    padding-left:15px;
+}
+
+.iWBody #gallery-text-right{
+    /* Added */
+    width: 50%;
+}
+
+.iauGif
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 10%;
+}
+
+.iColgap
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+.iCalIg{
+    width: 100%;
+    margin-left: 200px;
+    padding-top: 50px;
+}
+
+
+/* For the calendar */
+/* (B) CONTAINER */
+#cal-wrap { 
+    max-width: 600px; 
+    margin-left: 300px;
+}
+
+/* (C) PERIOD SELECTOR */
+#cal-date { display: flex; }
+#cal-mth, #cal-yr {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 0;
+}
+
+/* (D) CALENDAR */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #002e62;
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #3db6d1;
+  cursor: pointer;
+}
+#calendar tr td.blank {
+  background: #94cbd764;
+}
+#calendar tr td.today {
+  background: #a2bac5;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: rgb(0, 104, 179);
+}
